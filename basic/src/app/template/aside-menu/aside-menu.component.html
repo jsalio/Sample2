@@ -1,3 +1,22 @@
-<p>
-  aside-menu works!
-</p>
+<nav class="navbar navbar-expand navbar-dark bg-dark fixed-top">
+
+        <div class="navbar-header">
+            <button (click)="toggleCollapse()" id='eventbutton' class="navbar-toggler navbar-toggler-right" type="button">
+             <span [hidden]="collapse=='open'" class="fa fa-bars fa-lg"></span>
+               <span [hidden]="collapse=='closed'" class="fa fa-times fa-lg"></span>
+             </button>
+            <a class="navbar-brand">Project Manager</a>
+        </div>
+        <ul class="nav navbar-nav">
+            <li><a>Link 1</a></li>
+            <li><a>Link 2</a></li>
+        </ul>
+
+</nav>
+<!-- <div class="collapse show" [@collapse]="collapse">
+  <button (click)="toggleCollapse()" id='eventbutton' class="navbar-toggler navbar-toggler-right" type="button">
+     other navbar code omitted 
+    <span [hidden]="collapse=='open'" class="fa fa-bars fa-lg"></span>
+    <!-- <span [hidden]="collapse=='closed'" class="fa fa-times fa-lg"></span>
+  X</button>
+</div> -->
